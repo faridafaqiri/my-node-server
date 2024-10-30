@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const laptopsRoute = require("./routes/laptops");
+const laptopsRoute = require("./routes/products");
 
 const app = express();
 const PORT = 3000;
