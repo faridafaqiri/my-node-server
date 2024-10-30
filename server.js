@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const path = require("path"); // Import the path module
 const laptopsRoute = require("./routes/products");
 
 const app = express();
@@ -9,11 +10,11 @@ const PORT = 3000;
 app.use(bodyParser.json());
 
 // Serve static files from the 'public' directory
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public"))); // Use path.join for cross-platform compatibility
 
 // Basic route for the homepage
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/index.html");
+  res.sendFile(path.join(__dirname, "public", "index.html")); // Use path.join for cross-platform compatibility
 });
 
 // Link routes for laptops
