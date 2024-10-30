@@ -74,7 +74,8 @@ th {
   background-color: #f9df38;
 }
 
-button.edit, button.delete {
+button.edit,
+button.delete {
   background-color: #4caf50;
   color: white;
   border: none;
@@ -98,12 +99,12 @@ button.delete {
   }
 
   form input,
-	form select {
+  form select {
     padding: 8px;
   }
 
   th,
-	td {
+  td {
     padding: 8px;
   }
 }
