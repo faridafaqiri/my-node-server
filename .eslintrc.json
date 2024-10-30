@@ -1,20 +1,22 @@
 {
-  "extends": [
-    "next",
-    "next/core-web-vitals",
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
-  "rules": {
-    "react/react-in-jsx-scope": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-explicit-any": "warn"
-  },
-  "ignorePatterns": ["node_modules/", "dist/"],
   "env": {
     "browser": true,
-    "es2021": true
-  }
+    "es6": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "extends": ["airbnb-base"],
+  "rules": {
+    "no-shadow": "off",
+    "no-param-reassign": "off",
+    "eol-last": "off"
+  },
+  "ignorePatterns": [
+    "dist/",
+    "build/"
+  ]
 }
