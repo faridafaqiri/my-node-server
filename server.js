@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const usersRoute = require("./routes/users");
+const laptopsRoute = require("./routes/laptops");
 
 const app = express();
 const PORT = 3000;
@@ -16,8 +16,8 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 
-// Use the users route for '/users'
-app.use("/users", usersRoute);
+// Link routes for laptops
+app.use("/laptops", laptopsRoute);
 
 // Start the server
 app.listen(PORT, () => {
