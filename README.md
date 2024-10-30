@@ -11,6 +11,17 @@ By the end of this project, you will be able to:
 - 📤 Send JSON responses and manage data via request bodies and query parameters.
 - ⚠️ Implement basic error handling and routing.
 
+Demo 📸
+Here’s a screenshot of the demo:
+
+![Demo Image](public/images/Capture.JPG)
+
+
+Live Demo 🌐
+
+- **Live Link**: [my-node-server](https://my-node-server-eu3ffejty-farids-projects-d4ecbc25.vercel.app/)
+
+
 ## 📂 Project Structure
 
 grocery-management-dashboard/
